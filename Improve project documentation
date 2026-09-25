@@ -1,0 +1,171 @@
+# Inventory Management AI Agent 🤖
+
+An AI-powered inventory management assistant built using **n8n, Mistral AI, and Google Sheets** to automate stock tracking, inventory queries, and sales logging.
+
+---
+
+## 📌 Project Overview
+
+Managing inventory manually can lead to stock errors, delayed updates, and inefficient sales tracking.
+
+This project demonstrates an AI agent that allows users to interact with inventory data using natural language. The agent can check stock information, update inventory after sales, and record sales transactions automatically.
+
+---
+
+## ✨ Features
+
+### Inventory Management
+
+- Check current inventory availability
+- Retrieve product information
+- Update stock quantities automatically after sales
+- Maintain inventory records in Google Sheets
+
+### Sales Management
+
+- Record completed sales transactions
+- Generate invoice references
+- Store customer and transaction details
+- Maintain sales history
+
+### AI Agent Capabilities
+
+- Natural language interaction
+- Workflow-based decision making
+- Tool usage with Google Sheets
+- Memory-enabled conversations
+
+---
+
+## 🏗️ Architecture
+
+User
+ |
+ | Natural Language Request
+ |
+ v
+n8n AI Agent
+ |
+ +----------------+
+ |                |
+ v                v
+Mistral AI     Google Sheets
+                 |
+        +--------+--------+
+        |                 |
+   Inventory Sheet   Sales Sheet
+
+
+   
+---
+
+## 🔄 Workflow
+
+### 1. User Request
+
+User interacts with the AI agent using normal language.
+
+Example:
+
+
+
+
+---
+
+### 2. AI Processing
+
+The AI agent:
+
+- Understands user intent
+- Identifies required actions
+- Uses connected tools
+
+---
+
+### 3. Inventory Update
+
+The agent:
+
+- Reads current inventory data
+- Calculates updated quantity
+- Updates stock records
+
+---
+
+### 4. Sales Logging
+
+The agent records:
+
+- Customer name
+- Product name
+- Quantity
+- Price
+- Invoice ID
+- Date
+
+---
+
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| n8n | Workflow automation and AI orchestration |
+| Mistral AI | Large language model |
+| Google Sheets | Inventory database |
+| JSON | Workflow configuration |
+| AI Agent | Decision making and tool execution |
+
+---
+
+## 📂 Repository Contents
+
+
+inventory-management-ai-agent
+├── README.md
+└── inventory-management-ai-agent-workflow.json
+
+
+---
+
+## 🚀 Setup
+
+### Requirements
+
+- n8n instance
+- Mistral AI API key
+- Google Sheets account
+
+### Import Workflow
+
+1. Open n8n
+2. Import the workflow JSON file
+3. Configure credentials
+4. Connect Google Sheets
+5. Activate workflow
+
+---
+
+## 🔮 Future Improvements
+
+Possible enhancements:
+
+- Connect with ERP systems
+- Add database storage
+- Add WhatsApp integration
+- Add dashboard reporting
+- Add multi-user access control
+
+---
+
+## 👨‍💻 Author
+
+Muhammad Ahmad
+
+AI/ML Engineer | Automation Engineer
+
+Focused on:
+
+- AI Agents
+- RAG Systems
+- Workflow Automation
+- Business Process Automation
